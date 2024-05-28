@@ -1,0 +1,85 @@
+.diagnosis-history-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f4f0fe;
+  border-radius: 10px;
+}
+
+/* Diagnosis History Chart */
+.content-card-chart {
+  flex: 3;
+  padding: 8px;
+}
+
+/* Diagnosis History Summery */
+.content-card-summary {
+  flex: 1;
+  padding: 8px;
+}
+
+.content-diagnosis-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-card-blood-pressure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.content-card-bp-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.content-card-bp-bulletin {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.content-card-bp-bulletin.systolic {
+  background: #e66fd2;
+}
+
+.content-card-bp-bulletin.diastolic {
+  background: #8c6fe6;
+}
+
+.content-card-bp-label p {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.content-card-data-value {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.content-card-bp-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.content-card-bp-footer-image {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.content-card-bp-footer-label {
+  font-size: 14px;
+  font-weight: normal;
+}

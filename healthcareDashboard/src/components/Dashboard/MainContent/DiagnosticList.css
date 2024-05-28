@@ -1,0 +1,39 @@
+.content-diagnostic-table {
+  margin-top: 20px;
+}
+
+.content-diagnostic-table h2 {
+  font-size: var(--unnamed-font-size-18);
+  font-weight: var(--unnamed-font-weight-bold);
+  margin-bottom: 18px;
+}
+
+.content-diagnostic-row {
+  display: flex;
+}
+
+.content-diagnostic-header {
+  font-weight: var(--unnamed-font-weight-bold);
+}
+
+.content-diagnostic-body {
+  overflow-y: auto;
+  max-height: 45vh;
+}
+
+.content-diagnostic-column {
+  font-size: var(--unnamed-font-weight-normal);
+  line-height: 30px;
+}
+
+.content-diagnostic-column.first {
+  flex: 5;
+}
+
+.content-diagnostic-column.second {
+  flex: 8;
+}
+
+.content-diagnostic-column.third {
+  flex: 4;
+}

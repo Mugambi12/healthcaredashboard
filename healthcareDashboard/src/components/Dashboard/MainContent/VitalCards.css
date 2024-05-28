@@ -1,0 +1,58 @@
+/* Vital Cards */
+.content-vitals-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.content-vital-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.content-vital-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.content-vital-card:last-child {
+  margin-right: 0;
+}
+
+.content-card-respiratory-rate {
+  background: #e0f3fa;
+}
+
+.content-card-temperature {
+  background: #ffe6e9;
+}
+
+.content-card-heart-rate {
+  background: #ffe6f1;
+}
+
+.content-vital-label,
+.content-vital-value,
+.content-vital-levels {
+  font-family: var(--unnamed-font-family-manrope);
+}
+
+.content-vital-label,
+.content-vital-levels {
+  margin-top: 5px;
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-14);
+}
+
+.content-vital-value {
+  margin-top: 10px;
+  font-size: var(--unnamed-font-size-24);
+  font-weight: var(--unnamed-font-weight-bold);
+}
+
+.content-vital-levels {
+  margin-top: 10px;
+}

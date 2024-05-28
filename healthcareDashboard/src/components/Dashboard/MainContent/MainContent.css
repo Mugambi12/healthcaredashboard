@@ -1,0 +1,31 @@
+@import url("/src/index.css");
+
+/* Main layout */
+.content-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px;
+  width: 100%;
+}
+
+/* Columns */
+.content-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-left {
+  width: 66%;
+}
+
+.content-right {
+  width: 33%;
+}
+
+/* Cards */
+.content-card {
+  background: var(--unnamed-color-ffffff);
+  border-radius: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+}

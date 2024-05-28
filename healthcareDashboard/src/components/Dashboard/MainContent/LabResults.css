@@ -1,0 +1,31 @@
+/* Lab Results */
+.content-lab-results {
+  margin-left: 8px;
+}
+.content-lab-results-list {
+  list-style: none;
+  padding: 0;
+  overflow-y: auto;
+  max-height: 30vh;
+}
+
+.content-lab-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-family: var(--unnamed-font-family-manrope);
+  font-size: var(--unnamed-font-size-14);
+  color: var(--unnamed-color-072635);
+
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+    var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+}
+
+.content-lab-result-item img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
