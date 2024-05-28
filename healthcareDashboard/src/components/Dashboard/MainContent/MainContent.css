@@ -29,3 +29,24 @@
   padding: 10px;
   margin-bottom: 20px;
 }
+
+.content-diagnosis-history .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px;
+}
+
+@media (max-width: 768px) {
+  .content-main {
+    flex-direction: column;
+  }
+
+  .content-left {
+    width: 100%;
+  }
+
+  .content-right {
+    width: 100%;
+  }
+}

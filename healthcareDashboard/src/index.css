@@ -116,3 +116,9 @@ body {
   height: fit-content;
   min-height: 100dvh;
 }
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+}

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar/Sidebar";
 import MainContent from "./MainContent/MainContent";
 
-const Dashboard = () => {
+const Dashboard = ({ show, toggleSidebar }) => {
   const [patients, setPatients] = useState([]);
   const [selectedPatient, setSelectedPatient] = useState(null);
 
@@ -54,7 +54,12 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <Sidebar patients={patients} onPatientClick={handlePatientClick} />
+      <Sidebar
+        patients={patients}
+        onPatientClick={handlePatientClick}
+        show={show}
+        toggleSidebar={toggleSidebar}
+      />
       <MainContent selectedPatient={selectedPatient} />
     </div>
   );

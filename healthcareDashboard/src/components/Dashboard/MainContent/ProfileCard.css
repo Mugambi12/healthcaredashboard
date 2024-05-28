@@ -51,6 +51,7 @@
 
 .content-user-info-row .value {
   font-weight: var(--unnamed-font-weight-normal);
+  margin: 0 5px;
 }
 
 .content-profile-button {

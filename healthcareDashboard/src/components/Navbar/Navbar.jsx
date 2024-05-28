@@ -1,14 +1,27 @@
-import React from "react";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
   return (
     <nav className="navbar">
+      <img
+        src="/src/assets/menu_icon.svg"
+        alt="Menu Icon"
+        className="menu-icon"
+        onClick={toggleSidebar}
+      />
+
       <div className="navbar-left">
         <img src="public/TestLogo.svg" alt="Test Logo" className="logo" />
       </div>
 
-      <nav className="navbar-center">
+      <nav className={`navbar-center ${show ? "show" : ""}`}>
+        <img
+          src="/src/assets/close-icon.svg"
+          alt="close Icon"
+          className="menu-icon"
+          onClick={toggleNavbar}
+        />
+
         <a href="#!" className="nav-link">
           <img
             src="/src/assets/home_FILL0_wght300_GRAD0_opsz24.svg"
@@ -51,7 +64,7 @@ const Navbar = () => {
         </a>
       </nav>
 
-      <div className="navbar-right">
+      <div className={`navbar-right ${show ? "show" : ""}`}>
         <div className="profile">
           <img
             src="/src/assets/profile-image.png"
@@ -74,6 +87,13 @@ const Navbar = () => {
           className="icon"
         />
       </div>
+
+      <img
+        src="/src/assets/menu_icon.svg"
+        alt="Menu Icon"
+        className="menu-icon"
+        onClick={toggleNavbar}
+      />
     </nav>
   );
 };

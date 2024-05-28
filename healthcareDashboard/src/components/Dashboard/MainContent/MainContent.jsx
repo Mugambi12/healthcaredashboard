@@ -15,7 +15,7 @@ const MainContent = ({ selectedPatient }) => {
       {selectedPatient && (
         <div className="content-column content-left">
           <div className="content-card content-diagnosis-history">
-            <h2>Diagnosis History</h2>
+            <h3 className="header">Diagnosis History</h3>
             <DiagnosisHistory patient={selectedPatient} />
             <div className="content-vitals-cards">
               <DiagnosisHistoryRespiratoryRate patient={selectedPatient} />

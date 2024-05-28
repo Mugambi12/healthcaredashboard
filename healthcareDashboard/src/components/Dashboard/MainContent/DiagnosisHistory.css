@@ -9,10 +9,34 @@
 /* Diagnosis History Chart */
 .content-card-chart {
   flex: 3;
-  padding: 8px;
+  padding: 18px 0;
+  position: relative;
 }
 
-/* Diagnosis History Summery */
+.filter-container {
+  position: absolute;
+  top: -15px;
+  right: 18px;
+  margin: 10px;
+  z-index: 1;
+}
+
+.filter-container label {
+  margin-right: 5px;
+}
+
+.filter-container select {
+  border: none;
+  border-radius: 5px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.filter-container select:focus {
+  outline: none;
+}
+
+/* Diagnosis History Summary */
 .content-card-summary {
   flex: 1;
   padding: 8px;
@@ -30,6 +54,7 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  margin: 18px 0;
 }
 
 .content-card-bp-label {
@@ -37,6 +62,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  margin-bottom: 8px;
 }
 
 .content-card-bp-bulletin {
@@ -56,14 +82,15 @@
 
 .content-card-bp-label p {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: var(--unnamed-font-weight-normal);
 }
 
 .content-card-data-value {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: var(--unnamed-font-weight-bold);
   text-align: left;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .content-card-bp-footer {
@@ -81,5 +108,29 @@
 
 .content-card-bp-footer-label {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: var(--unnamed-font-weight-normal);
+}
+
+@media screen and (max-width: 768px) {
+  .diagnosis-history-row {
+    flex-direction: column;
+  }
+
+  .content-card-chart {
+    padding: 18px 0;
+  }
+
+  .content-card-summary {
+    padding: 8px;
+  }
+
+  .content-diagnosis-entry {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content-card-blood-pressure {
+    margin: 18px 0;
+  }
 }

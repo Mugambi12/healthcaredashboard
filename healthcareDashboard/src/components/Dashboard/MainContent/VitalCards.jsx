@@ -1,19 +1,36 @@
 import "./VitalCards.css";
 
-export const DiagnosisHistoryRespiratoryRate = ({ patient }) => {
-  const latestEntry =
-    patient.diagnosisHistory[patient.diagnosisHistory.length - 1];
+const getLatestEntry = (entries) => {
+  if (!entries || entries.length === 0) return null;
+
+  return entries.reduce((latest, entry) => {
+    const entryDate = new Date(entry.year, entry.month);
+    const latestDate = new Date(latest.year, latest.month);
+
+    if (entryDate > latestDate) return entry;
+    return latest;
+  }, entries[0]);
+};
+
+const VitalCard = ({ patient, label, icon, valueKey }) => {
+  const latestEntry = getLatestEntry(patient.diagnosisHistory);
+
   return (
     <>
       {latestEntry && (
-        <div className="content-vital-card content-card-respiratory-rate">
-          <img src="/src/assets/respiratory_rate.svg" alt="Respiratory Rate" />
-          <div className="content-vital-label">Respiratory Rate</div>
+        <div
+          className={`content-vital-card content-card-${label
+            .toLowerCase()
+            .replace(" ", "-")}`}
+        >
+          <img src={`/src/assets/${icon}`} alt={label} />
+          <div className="content-vital-label">{label}</div>
           <div className="content-vital-value">
-            {latestEntry.respiratory_rate.value} bpm
+            {latestEntry[valueKey].value}{" "}
+            {valueKey === "temperature" ? "°F" : "bpm"}
           </div>
           <div className="content-vital-levels">
-            {latestEntry.respiratory_rate.levels}
+            {latestEntry[valueKey].levels}
           </div>
         </div>
       )}
@@ -21,47 +38,32 @@ export const DiagnosisHistoryRespiratoryRate = ({ patient }) => {
   );
 };
 
-export const DiagnosisHistoryTemperature = ({ patient }) => {
-  const latestEntry =
-    patient.diagnosisHistory[patient.diagnosisHistory.length - 1];
-  return (
-    <>
-      {latestEntry && (
-        <div className="content-vital-card content-card-temperature">
-          <img src="/src/assets/temperature.svg" alt="Temperature" />
-          <div className="content-vital-label">Temperature</div>
-          <div className="content-vital-value">
-            {latestEntry.temperature.value}°F
-          </div>
-          <div className="content-vital-levels">
-            {latestEntry.temperature.levels}
-          </div>
-        </div>
-      )}
-    </>
-  );
-};
+export const DiagnosisHistoryRespiratoryRate = ({ patient }) => (
+  <VitalCard
+    patient={patient}
+    label="Respiratory Rate"
+    icon="respiratory_rate.svg"
+    valueKey="respiratory_rate"
+  />
+);
 
-export const DiagnosisHistoryHeartRate = ({ patient }) => {
-  const latestEntry =
-    patient.diagnosisHistory[patient.diagnosisHistory.length - 1];
-  return (
-    <>
-      {latestEntry && (
-        <div className="content-vital-card content-card-heart-rate">
-          <img src="/src/assets/HeartBPM.svg" alt="Heart Rate" />
-          <div className="content-vital-label">Heart Rate</div>
-          <div className="content-vital-value">
-            {latestEntry.heart_rate.value} bpm
-          </div>
-          <div className="content-vital-levels">
-            {latestEntry.heart_rate.levels}
-          </div>
-        </div>
-      )}
-    </>
-  );
-};
+export const DiagnosisHistoryTemperature = ({ patient }) => (
+  <VitalCard
+    patient={patient}
+    label="Temperature"
+    icon="temperature.svg"
+    valueKey="temperature"
+  />
+);
+
+export const DiagnosisHistoryHeartRate = ({ patient }) => (
+  <VitalCard
+    patient={patient}
+    label="Heart Rate"
+    icon="HeartBPM.svg"
+    valueKey="heart_rate"
+  />
+);
 
 export default [
   DiagnosisHistoryRespiratoryRate,

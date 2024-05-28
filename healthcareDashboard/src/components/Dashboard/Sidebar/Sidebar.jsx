@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Sidebar.css";
 
-const Sidebar = ({ patients, onPatientClick }) => {
+const Sidebar = ({ patients, onPatientClick, show, toggleSidebar }) => {
   const [selectedPatient, setSelectedPatient] = useState(null);
 
   useEffect(() => {
-    // Set the latest patient as the selected one when no patient is clicked
     if (!selectedPatient && patients.length > 0) {
-      setSelectedPatient(patients[patients.length - 1]);
-      onPatientClick(patients[patients.length - 1]);
+      const lastPatient = patients[0];
+      setSelectedPatient(lastPatient);
+      onPatientClick(lastPatient);
     }
   }, [patients, selectedPatient, onPatientClick]);
 
@@ -18,14 +18,22 @@ const Sidebar = ({ patients, onPatientClick }) => {
   };
 
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${show ? "show" : ""}`}>
       <div className="sidebar-header">
         <h2 className="sidebar-title">Patients</h2>
-        <img
-          src="/src/assets/search_FILL0_wght300_GRAD0_opsz24.svg"
-          alt="Search"
-          className="search-icon"
-        />
+        <div className="sidebar-header-icons">
+          <img
+            src="/src/assets/search_FILL0_wght300_GRAD0_opsz24.svg"
+            alt="Search"
+            className="search-icon"
+          />
+          <img
+            src="/src/assets/close-icon.svg"
+            alt="Menu Icon"
+            className="menu-icon"
+            onClick={toggleSidebar}
+          />
+        </div>
       </div>
       <ul className="patient-list">
         {patients.map((patient, index) => (
