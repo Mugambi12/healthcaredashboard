@@ -23,7 +23,7 @@ const VitalCard = ({ patient, label, icon, valueKey }) => {
             .toLowerCase()
             .replace(" ", "-")}`}
         >
-          <img src={`/src/assets/${icon}`} alt={label} />
+          <img src={`public/assets/${icon}`} alt={label} />
           <div className="content-vital-label">{label}</div>
           <div className="content-vital-value">
             {latestEntry[valueKey].value}{" "}
