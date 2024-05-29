@@ -16,7 +16,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
   return (
     <nav className="navbar">
       <img
-        src="public/assets/menu_icon.svg"
+        src="public/menu_icon.svg"
         alt="Menu Icon"
         className="menu-icon"
         onClick={toggleSidebar}
@@ -28,7 +28,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
 
       <nav className={`navbar-center ${show ? "show" : ""}`}>
         <img
-          src="public/assets/close-icon.svg"
+          src="public/close-icon.svg"
           alt="close Icon"
           className="menu-icon"
           onClick={toggleNavbar}
@@ -36,7 +36,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
 
         <a href="#!" className="nav-link">
           <img
-            src="public/assets/home_FILL0_wght300_GRAD0_opsz24.svg"
+            src="public/home_FILL0_wght300_GRAD0_opsz24.svg"
             alt="Home Icon"
             className="icon"
           />
@@ -44,7 +44,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
         </a>
         <a href="#!" className="nav-link active">
           <img
-            src="public/assets/group_FILL0_wght300_GRAD0_opsz24.svg"
+            src="public/group_FILL0_wght300_GRAD0_opsz24.svg"
             alt="Group Icon"
             className="icon"
           />
@@ -52,7 +52,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
         </a>
         <a href="#!" className="nav-link">
           <img
-            src="public/assets/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
+            src="public/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
             alt="Calendar Icon"
             className="icon"
           />
@@ -60,7 +60,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
         </a>
         <a href="#!" className="nav-link">
           <img
-            src="public/assets/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"
+            src="public/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"
             alt="Assessment Icon"
             className="icon"
           />
@@ -68,7 +68,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
         </a>
         <a href="#!" className="nav-link">
           <img
-            src="public/assets/credit_card_FILL0_wght300_GRAD0_opsz24.svg"
+            src="public/credit_card_FILL0_wght300_GRAD0_opsz24.svg"
             alt="Billing Icon"
             className="icon"
           />
@@ -79,7 +79,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
       <div className={`navbar-right ${show ? "show" : ""}`}>
         <div className="profile">
           <img
-            src="public/assets/profile-image.png"
+            src="public/profile-image.png"
             alt="Profile Image"
             className="profile-image"
           />
@@ -90,13 +90,13 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
         </div>
 
         <img
-          src="public/assets/settings_FILL0_wght300_GRAD0_opsz24.svg"
+          src="public/settings_FILL0_wght300_GRAD0_opsz24.svg"
           alt="Settings Cog Icon"
           className="icon"
         />
 
         <img
-          src="public/assets/more_vert_FILL0_wght300_GRAD0_opsz24.svg"
+          src="public/more_vert_FILL0_wght300_GRAD0_opsz24.svg"
           alt="Vertical More Icon"
           className="icon"
           onClick={toggleDropdown}
@@ -112,7 +112,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
       </div>
 
       <img
-        src="public/assets/menu_icon.svg"
+        src="public/menu_icon.svg"
         alt="Menu Icon"
         className="menu-icon"
         onClick={toggleNavbar}

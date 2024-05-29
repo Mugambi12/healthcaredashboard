@@ -128,7 +128,7 @@ const DiagnosisHistory = ({ patient }) => {
                 <div className="content-card-bp-footer">
                   <img
                     className="content-card-bp-footer-image"
-                    src="public/assets/ArrowUp.svg"
+                    src="public/ArrowUp.svg"
                     alt="Increase in systolic blood pressure"
                   />
                   <span className="content-card-bp-footer-label">
@@ -150,7 +150,7 @@ const DiagnosisHistory = ({ patient }) => {
                 <div className="content-card-bp-footer">
                   <img
                     className="content-card-bp-footer-image"
-                    src="public/assets/ArrowDown.svg"
+                    src="public/ArrowDown.svg"
                     alt="Decrease in diastolic blood pressure"
                   />
                   <span className="content-card-bp-footer-label">

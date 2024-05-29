@@ -8,7 +8,7 @@ const LabResults = ({ patient }) => (
         <li key={index} className="content-lab-result-item">
           {result}{" "}
           <img
-            src="public/assets/download_FILL0_wght300_GRAD0_opsz24.svg"
+            src="public/download_FILL0_wght300_GRAD0_opsz24.svg"
             alt="Download Icon"
           />
         </li>

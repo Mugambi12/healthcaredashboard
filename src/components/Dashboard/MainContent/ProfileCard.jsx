@@ -10,7 +10,7 @@ const ProfileCard = ({ patient }) => (
       <div className="content-user-info">
         <div className="content-user-info-row">
           <img
-            src="public/assets/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
+            src="public/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
             alt="Calendar Icon"
           />
           <div className="content-user-info-column">
@@ -20,7 +20,7 @@ const ProfileCard = ({ patient }) => (
         </div>
         <div className="content-user-info-row">
           <img
-            src={`public/assets/${
+            src={`public/${
               patient.gender === "Female" ? "Female" : "Male"
             }Icon.svg`}
             alt={`${patient.gender} Icon`}
@@ -31,21 +31,21 @@ const ProfileCard = ({ patient }) => (
           </div>
         </div>
         <div className="content-user-info-row">
-          <img src="public/assets/PhoneIcon.svg" alt="Phone Icon" />
+          <img src="public/PhoneIcon.svg" alt="Phone Icon" />
           <div className="content-user-info-column">
             <span className="label">Contact Info:</span>
             <span className="value">{patient.phoneNumber}</span>
           </div>
         </div>
         <div className="content-user-info-row">
-          <img src="public/assets/PhoneIcon.svg" alt="Phone Icon" />
+          <img src="public/PhoneIcon.svg" alt="Phone Icon" />
           <div className="content-user-info-column">
             <span className="label">Emergency Contact:</span>
             <span className="value">{patient.emergencyContact}</span>
           </div>
         </div>
         <div className="content-user-info-row">
-          <img src="public/assets/InsuranceIcon.svg" alt="Insurance Icon" />
+          <img src="public/InsuranceIcon.svg" alt="Insurance Icon" />
           <div className="content-user-info-column">
             <span className="label">Insurance Provider:</span>
             <span className="value">{patient.insuranceType}</span>

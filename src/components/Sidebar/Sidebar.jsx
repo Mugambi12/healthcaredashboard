@@ -23,12 +23,12 @@ const Sidebar = ({ patients, onPatientClick, show, toggleSidebar }) => {
         <h2 className="sidebar-title">Patients</h2>
         <div className="sidebar-header-icons">
           <img
-            src="public/assets/search_FILL0_wght300_GRAD0_opsz24.svg"
+            src="public/search_FILL0_wght300_GRAD0_opsz24.svg"
             alt="Search"
             className="search-icon"
           />
           <img
-            src="public/assets/close-icon.svg"
+            src="public/close-icon.svg"
             alt="Menu Icon"
             className="menu-icon"
             onClick={toggleSidebar}
@@ -58,7 +58,7 @@ const Sidebar = ({ patients, onPatientClick, show, toggleSidebar }) => {
               </span>
             </div>
             <img
-              src="public/assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"
+              src="public/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"
               alt="View More"
               className="view-more"
             />
