@@ -79,7 +79,7 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
       <div className={`navbar-right ${show ? "show" : ""}`}>
         <div className="profile">
           <img
-            src="public/profile-image.png"
+            src="src/assets/profile-image.png"
             alt="Profile Image"
             className="profile-image"
           />
