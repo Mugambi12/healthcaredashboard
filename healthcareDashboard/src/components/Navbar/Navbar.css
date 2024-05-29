@@ -1,13 +1,13 @@
 .navbar {
   height: 72px;
-  background: #ffffff;
+  background: var(--unnamed-color-ffffff);
   border-radius: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   margin: 18px;
-  box-shadow: 0px 4px 10px #f5f5f5;
+  box-shadow: 0px 4px 10px var(--unnamed-color-ffffff);
 }
 
 .navbar-left .logo {
@@ -19,7 +19,7 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  background: #fff;
+  background: var(--unnamed-color-ffffff);
   padding: 10px;
   border-radius: 18px;
 }
@@ -73,9 +73,32 @@
 }
 
 .navbar-right .icon {
+  padding: 0 5px;
   height: 18px;
-  margin-left: 30px;
+  margin-left: 20px;
   cursor: pointer;
+}
+
+.dropdown-content {
+  z-index: 1;
+  top: 80px;
+  right: 40px;
+  position: absolute;
+  border-radius: 10px;
+  background: var(--activestate_bg_1);
+  box-shadow: 0 2px 4px 0 var(--unnamed-color-000000) 0.1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+  color: var(--unnamed-color-ffffff);
+  background: var(--unnamed-color-072635);
 }
 
 .menu-icon {
@@ -105,12 +128,12 @@
     display: none;
     z-index: 5;
     top: 0;
-    background: #fff;
+    background: var(--unnamed-color-ffffff);
     padding: 20px;
     width: 320px;
     position: fixed;
     transition: right 0.3s ease;
-    box-shadow: 0px 4px 10px #f0f0f0;
+    box-shadow: 0px 4px 10px var(--unnamed-color-f6f6f6);
   }
 
   .navbar-center {

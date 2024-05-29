@@ -1,6 +1,18 @@
+import { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleLogout = () => {
+    localStorage.removeItem("credentials");
+    window.location.reload();
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
   return (
     <nav className="navbar">
       <img
@@ -76,16 +88,27 @@ const Navbar = ({ toggleSidebar, show, toggleNavbar }) => {
             <span className="role">General Practitioner</span>
           </div>
         </div>
+
         <img
           src="/src/assets/settings_FILL0_wght300_GRAD0_opsz24.svg"
           alt="Settings Cog Icon"
           className="icon"
         />
+
         <img
           src="/src/assets/more_vert_FILL0_wght300_GRAD0_opsz24.svg"
           alt="Vertical More Icon"
           className="icon"
+          onClick={toggleDropdown}
         />
+
+        {dropdownOpen && (
+          <div className="dropdown-content">
+            <a href="#!" onClick={handleLogout}>
+              Logout
+            </a>
+          </div>
+        )}
       </div>
 
       <img

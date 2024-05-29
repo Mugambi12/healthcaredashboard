@@ -1,22 +1,21 @@
 import { useEffect, useState } from "react";
-import Sidebar from "./Sidebar/Sidebar";
-import MainContent from "./MainContent/MainContent";
-//import data from "./data.jsx";
+import Sidebar from "../../Sidebar/Sidebar";
+import MainContent from "../MainContent/MainContent";
+//import data from "../../Data/data";
 
-const Dashboard = ({ show, toggleSidebar }) => {
+const Dashboard = ({ show, toggleSidebar, credentials }) => {
   const [patients, setPatients] = useState([]);
   const [selectedPatient, setSelectedPatient] = useState(null);
 
   const apiURL = "https://fedskillstest.coalitiontechnologies.workers.dev";
-  const apiHeaders = {
-    Authorization: "Basic Y29hbGl0aW9uOnNraWxscy10ZXN0",
-  };
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(`${apiURL}`, {
-          headers: apiHeaders,
+          headers: {
+            Authorization: `Basic ${credentials}`,
+          },
         });
 
         if (!response.ok) {
@@ -47,7 +46,7 @@ const Dashboard = ({ show, toggleSidebar }) => {
     };
 
     fetchData();
-  }, []);
+  }, [credentials]);
 
   const handlePatientClick = (patient) => {
     setSelectedPatient(patient);
