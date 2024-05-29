@@ -2,7 +2,7 @@
 
 ### Desktop View
 
-![Desktop View Demo](Desktop%20View%20Demo.png)
+![Desktop View Demo](demoImages/Desktop%20View%20Demo.png)
 
 ### Prerequisites
 
@@ -31,6 +31,11 @@ npm run dev
 
 ### Mobile View
 
-![Mobile View Demo Sidebar](Mobile%20View%20Demo%20Sidebar.png)
-![Mobile View Demo](Mobile%20View%20Demo.png)
-![Mobile View Demo Navbar](Mobile%20View%20Demo%20Navbar.png)
+![Mobile View Demo Sidebar](demoImages/Mobile%20View%20Demo%20Sidebar.png)
+![Mobile View Demo](demoImages/Mobile%20View%20Demo.png)
+![Mobile View Demo Navbar](demoImages/Mobile%20View%20Demo%20Navbar.png)
+
+### Credentials
+
+- Username : coalition
+- Password : skills-test
