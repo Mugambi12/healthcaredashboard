@@ -37,5 +37,5 @@ npm run dev
 
 ### Credentials
 
-- Username : coalition
-- Password : skills-test
+- U : coalition
+- P : skills-test
