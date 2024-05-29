@@ -1,29 +1,29 @@
 import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar/Sidebar";
 import MainContent from "./MainContent/MainContent";
-import data from "./data.jsx";
+//import data from "./data.jsx";
 
 const Dashboard = ({ show, toggleSidebar }) => {
   const [patients, setPatients] = useState([]);
   const [selectedPatient, setSelectedPatient] = useState(null);
 
-  //const apiURL = "https://fedskillstest.coalitiontechnologies.workers.dev";
-  //const apiHeaders = {
-  //  Authorization: "Basic Y29hbGl0aW9uOnNraWxscy10ZXN0",
-  //};
+  const apiURL = "https://fedskillstest.coalitiontechnologies.workers.dev";
+  const apiHeaders = {
+    Authorization: "Basic Y29hbGl0aW9uOnNraWxscy10ZXN0",
+  };
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        //        const response = await fetch(`${apiURL}`, {
-        //          headers: apiHeaders,
-        //        });
-        //
-        //        if (!response.ok) {
-        //          throw new Error(`HTTP error! status: ${response.status}`);
-        //        }
-        //
-        //        const data = await response.json();
+        const response = await fetch(`${apiURL}`, {
+          headers: apiHeaders,
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
 
         const transformedPatients = data.map((patient, index) => ({
           id: index + 1,
