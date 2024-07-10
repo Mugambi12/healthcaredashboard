@@ -5,7 +5,7 @@
   ![GitHub repo size](https://img.shields.io/github/repo-size/mugambi12/healthcaredashboard)
   ![GitHub stars](https://img.shields.io/github/stars/mugambi12/healthcaredashboard?style=social)
   ![GitHub forks](https://img.shields.io/github/forks/mugambi12/healthcaredashboard?style=social)
-  [![Twitter Follow](https://img.shields.io/twitter/follow/mugambimungiria?style=social)](https://twitter.com/intent/follow?screen_name=SilasMungiria)
+  [![Twitter Follow](https://img.shields.io/twitter/follow/Silas Mungiria?style=social)](https://twitter.com/intent/follow?screen_name=SilasMungiria)
 
   <a href="https://mugambi12.github.io/healthcaredashboard"><strong>➥ Live Demo</strong></a>
 </div>
