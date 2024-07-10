@@ -1,5 +1,18 @@
 # Healthcare Dashboard
 
+<div align="center">
+
+  ![GitHub repo size](https://img.shields.io/github/repo-size/mugambi12/Digital-Clock)
+  ![GitHub stars](https://img.shields.io/github/stars/mugambi12/Digital-Clock?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/mugambi12/Digital-Clock?style=social)
+  [![Twitter Follow](https://img.shields.io/twitter/follow/mugambimungiria?style=social)](https://twitter.com/intent/follow?screen_name=mugambimungiria)
+
+  <br />
+  <br />
+
+  <a href="https://mugambi12.github.io/healthcaredashboard"><strong>➥ Live Demo</strong></a>
+</div>
+
 ### Desktop View
 
 ![Desktop View Demo](demoImages/Desktop%20View%20Demo.png)
