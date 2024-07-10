@@ -1,5 +1,3 @@
-# Healthcare Dashboard
-
 <div align="center">
 
   ![GitHub repo size](https://img.shields.io/github/repo-size/mugambi12/healthcaredashboard)
@@ -9,6 +7,8 @@
 
   <a href="https://mugambi12.github.io/healthcaredashboard"><strong>➥ Live Demo</strong></a>
 </div>
+
+# Healthcare Dashboard
 
 ## Desktop View
 
